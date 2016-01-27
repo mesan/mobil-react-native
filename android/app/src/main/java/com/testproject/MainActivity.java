@@ -1,7 +1,10 @@
 package com.testproject;
 
+import android.widget.Toast;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.shell.MainReactPackage;
 
 import java.util.Arrays;
@@ -34,6 +37,7 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-        new MainReactPackage());
+        new MainReactPackage(),
+              new ToastReactPackage());
     }
 }
